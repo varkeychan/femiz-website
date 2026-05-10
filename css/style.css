@@ -23,9 +23,9 @@
   --space-5: 24px;
   --space-6: 32px;
   --space-7: 48px;
-  --space-8: 72px;
-  --space-9: 104px;
-  --space-10: 144px;
+  --space-8: 64px;
+  --space-9: 72px;
+  --space-10: 88px;
 
   --radius-xs: 8px;
   --radius-sm: 14px;
@@ -596,8 +596,11 @@ h1 {
 .section {
   max-width: 1180px;
   margin: 0 auto;
-  padding: var(--space-10) clamp(20px, 4vw, 48px);
+  padding: var(--space-9) clamp(20px, 4vw, 48px);
 }
+
+#categories { padding-bottom: var(--space-7); }
+#gallery { padding-top: var(--space-7); }
 
 .section h2,
 .instagram h2,
@@ -665,6 +668,13 @@ h1 {
   line-height: 1.05;
 }
 .about-card span { color: var(--ink-muted); line-height: 1.65; }
+.founder-signature {
+  margin-top: 12px;
+  color: var(--rose);
+  font-size: 14px;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
 
 .card-grid {
   display: grid;
@@ -1150,9 +1160,9 @@ footer {
 
 @media (max-width: 560px) {
   :root {
-    --space-8: 56px;
-    --space-9: 76px;
-    --space-10: 92px;
+    --space-8: 48px;
+    --space-9: 54px;
+    --space-10: 64px;
   }
 
   .site-nav {
@@ -1212,6 +1222,8 @@ footer {
   .hero-slide.right { transform: translateX(34%) rotateY(-7deg) rotate(3deg) scale(0.78); }
 
   .section { padding-left: 18px; padding-right: 18px; }
+  #categories { padding-bottom: 34px; }
+  #gallery { padding-top: 34px; }
   .section h2,
   .instagram h2,
   .booking h2 { font-size: clamp(44px, 13vw, 64px); }
