@@ -649,6 +649,8 @@ h1 {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-card div { padding: var(--space-5); }
